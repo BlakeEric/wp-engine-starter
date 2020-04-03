@@ -1,0 +1,39 @@
+
+.row {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+  overflow: auto;
+  line-height: 2;
+  overflow-x: hidden;
+
+  @include breakpoint (tablet) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include breakpoint (laptop) {
+    max-width: 64rem;
+  }
+
+  @include breakpoint (desktop) {
+    max-width: 72.25rem;
+  }
+
+  @include breakpoint (bigscreen){
+    max-width: 81.25rem;
+  }
+
+  &.internal-row {
+    padding: 0;
+  }
+}
+
+//----- Extends
+%clearfix:after {
+	display:block;
+	clear:both;
+	content:'';
+}
+
+

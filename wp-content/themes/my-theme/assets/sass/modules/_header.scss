@@ -1,0 +1,224 @@
+header#masthead {
+	position: relative;
+	top: 0;
+	width: 100%;
+	display: block;
+	padding: 0 0 1em;
+	background: black;
+	transition: all 0.3s ease;
+	z-index: 10;
+
+}
+.masthead-inner {
+	margin: 0 auto;
+	display: block;
+	padding: 2em;
+}
+
+header#masthead {
+	z-index: 10;
+	background: transparent;
+	background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+	position: fixed;
+	top: 0;
+
+	&.light {
+		background: #fff;
+		box-shadow: 1px 3px 15px #333;
+	}
+}
+
+.logged-in header#masthead {
+	top: 30px;
+}
+
+header#masthead h1, header#masthead p {
+	font-size: 1em;
+	line-height: 1em;
+	font-weight: bold;
+	flex: 1;
+	margin: 0;
+}
+
+.logo, .logo-dark {
+	transition: opacity 0.2s ease;
+	position: absolute;
+	display: inline-block;
+	margin-top: -20px;
+
+	@include breakpoint(mobileonly) {
+		margin-top: -10px;
+	}
+
+	.custom-logo-link {
+		position: relative;
+		display: inline-block;
+
+		// Change this based on the size of the project logo
+		max-height: 120px;
+
+		img {
+			// Change this based on the size of the project logo
+			max-height: 120px;
+			margin: auto;
+			width: auto;
+			display: inline-block;
+
+			@include breakpoint(mobileonly) {
+
+				// Change this based on the size of the project logo
+				max-height: 70px;
+			}
+		}
+	}
+}
+
+.logo-dark {
+	opacity: 0;
+}
+
+.home .logo .custom-logo-link {
+	top: 0;
+}
+
+.header-navigation {
+	display: none;
+	float: right;
+	text-align: right;
+
+	// Change this based on the size of the project navigation links
+	@media only screen and(min-width: 1200px) {
+
+		display: inline-block;
+		margin-top: 5px;
+		
+		ul {
+
+			padding: 0;
+			margin: 0;
+			align-items: center;
+			
+			li {
+
+				display: inline-block;
+				padding: 0 0.8rem;
+				position: relative;
+				text-align: center;
+				// font-size: 1.4rem;
+
+				a {
+					background: none;
+					position: relative;
+					color: #fff;
+					margin: 0 auto;
+					text-align: center;
+					transition: 0.5s all;
+					padding-bottom: 4px;
+					
+					&:hover {
+						color: #fff;
+						background-size: 100% 2px;
+					}
+
+				}
+
+			}
+			
+		}
+	}
+
+}
+
+body {
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current-page-ancestor > a,
+	.current-menu-ancestor > a {
+		color: #fff !important;
+		font-weight: bold;
+	}
+}
+
+header#masthead.light .masthead-inner .row nav#header-navigation .current_page_item > a,
+.current-menu-item > a,
+.current-page-ancestor > a,
+.current-menu-ancestor > a {
+	color: #333 !important;
+	font-weight: bold;
+}
+
+.light {
+	
+	.header-navigation {
+		a {
+			color: #333;
+			transition: 0.5s all;
+			padding-bottom: 4px;
+
+			&:hover {
+				color: #333;
+			}
+
+		}
+
+	}
+
+	body {
+		.current_page_item > a,
+		.current-menu-item > a,
+		.current-page-ancestor > a,
+		.current-menu-ancestor > a {
+			color: #333 !important;
+			font-weight: bold;
+		}
+	}
+	
+	header#masthead.light .masthead-inner .row nav#header-navigation .current_page_item > a,
+	.current-menu-item > a,
+	.current-page-ancestor > a,
+	.current-menu-ancestor > a {
+		color: #333 !important;
+		font-weight: bold;
+	}
+
+	.mobileNav-link {
+		color: #333;
+		border-color: #333 !important;
+	}
+
+	.logo {
+		opacity: 0;
+	}
+
+	.logo-dark {
+		opacity: 1 !important;
+	}
+
+}
+
+.menu-page #masthead {
+	background: #333;
+	position: static;
+	padding-bottom: 2.5rem;
+	height: 85px;
+	margin: 0;
+}
+
+.main-navigation-list-wrap {
+	overflow: auto;
+	box-sizing: border-box;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+	a {
+		background: none;
+		border: none;
+		&:hover, &:focus, &:active {
+			color: #333;
+		}
+	}
+}
+

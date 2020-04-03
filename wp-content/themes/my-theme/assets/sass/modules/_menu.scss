@@ -1,0 +1,214 @@
+.main-navigation-wrap {
+    padding: 2rem 0;
+    width: 100%;
+    display: block;
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li a {
+      background: none;
+      text-decoration: none;
+      border: none;
+    }
+  }
+  
+  a.nav-back-link {
+    float: right;
+    color: white;
+  }
+  
+  
+  #mobile-navigation {
+    z-index: 1020;
+    position: fixed;
+    display: none !important;
+    padding: 0;
+    height: 100vh;
+    width: 70%;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 3rem;
+    box-shadow: -10px 0px 11px -1px rgba(0,0,0,0.75);
+    a {
+      background: none;
+      border:none;
+      color: #fff;
+    }
+    header {
+      overflow: auto;
+      padding-bottom: 1rem;
+  
+      .logo {
+        display: block;
+        margin-top: 35px;
+        margin-left: 40px;
+
+        @include breakpoint(mobileonly) {
+          .custom-logo-link img {
+            max-height: 70px;
+          }
+
+          margin-top: 45px;
+        }
+      }
+    }
+    .phone {
+      font-size: 1.5em;
+    }
+    .mobile-nav-button {
+      background-color: transparent;
+      color: #fff;
+      line-height: 1.5em;
+      padding-left: 1em;
+      padding-right: 1em;
+      font-weight: 500;
+      border: 1px solid #fff;
+      border-radius: 25px;
+      padding-top: 2px;
+      padding-bottom: 7px;
+
+      &:hover {
+        transition: background-color .5s ease;
+        background-color: #333;
+        color: #333;
+      }
+  
+    }
+    #mobile-navigation-close {
+      float: right;
+      background: none;
+      border: none;
+      font-size: 5rem;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 200;
+      margin-top: 21px;
+      padding: 15px 60px 0;
+      font-family: 'proxima nova', sans-serif;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 26px;
+      }
+
+      @include breakpoint(mobileonly) {
+        padding: 25px 30px 0;
+        font-size: 4rem;
+      }
+
+    }
+    .mobile-nav-underlay {
+      background: rgba(0,0,0,0.4);
+      z-index: -10;
+      position: fixed;
+      padding: 2rem;
+      height: 100vh;
+      width: 30%;
+      top: 0;
+      left: 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      padding: 3rem;
+    }
+    li {
+      padding: 10px 0;
+
+      a {
+        background: none;
+        text-decoration: none;
+        border: none;
+        transition: all 0.2s ease;
+        color: #fff;
+        font-weight: 100;
+        font-family: 'house-slant', sans-serif;
+        font-size: 4rem;
+        text-shadow: 1px 1px 10px #333;
+        line-height: 1;
+
+        @include breakpoint(mobileonly) {
+          font-size: 3rem;
+        }
+
+        @media screen and (max-width: 320px) {
+          font-size: 2rem;
+        }
+
+        &:hover, &:active, &:focus {
+          color:rgba(255, 255, 255, 0.603);
+          // font-weight: bold;
+        }
+      }
+      ul.sub-menu {
+        padding-left: 1rem;
+        padding-top: 0;
+      }
+    }
+    li.current_page_item > a,
+    li.current-menu-item > a,
+    li.current_page_ancestor > a,
+    li.current-menu-ancestor > a {
+      color:rgba(255, 255, 255, 0.603) !important;
+      font-weight: bold;
+    }
+    li.current_page_item,
+    li.current-menu-item,
+    li.current_page_ancestor,
+    li.current-menu-ancestor {
+      list-style-type: none;
+      color: transparent;
+    }
+    &.visible {
+      display: block !important;
+    }
+  }
+  
+  .nav-socials-wrapper{
+    padding-top: 2rem;
+    a {
+      color: #333;
+    }
+  
+    [class^="socicon-"], [class*=" socicon-"]{
+      font-size: 1.5rem;
+      margin-right: 6px;
+    }
+  }
+  
+  .mobile-nav-divider{
+    // border-top: 1px solid rgba(255,255,255,0.4);
+    overflow: auto;
+
+  }
+
+  .call-to-action-area-mobile {
+
+    .call-to-action {
+  
+      color: #fff;
+      font-weight: 600;
+      background-color: #333;
+      display: block;
+      margin: 0 3rem;
+      text-align: center;
+      border: 1px solid #333;
+      width: 130px;
+      padding: 10px;
+  
+      &:hover {
+        transition: background-color .5s ease-in-out;
+        color: #333;
+        background-color: #fff;
+      }
+  
+      p {
+        margin: 0;
+        font-size: 1rem;
+      }
+    }
+  
+  }

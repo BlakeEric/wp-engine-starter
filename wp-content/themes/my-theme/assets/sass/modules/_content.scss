@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+## Content
+--------------------------------------------------------------*/
+#content {
+	// max-width: 33em;
+	margin: 0 auto;
+	padding: 2em 1em;
+	min-height: 60vh;
+}
+
+article a, nav a {
+	// background: rgb(252, 248, 243) none repeat scroll 0% 0%;
+	// border-bottom: 0.1em dotted;
+	line-height: 1.6em;
+}
+
+article > header > h1, article > header > h2 {
+	font-size: 2.4em;
+	line-height: 1em;
+	margin: 0 0 .4em 0;
+}
+
+.entry-meta {
+	// color: rgb(179, 179, 179);
+}
+
+.entry-meta a {
+	// color: rgb(179, 179, 179);
+}
+
+.cat-links {
+	display: flex;
+	align-items: center;
+}
+
+.cat-links a:first-of-type {
+	margin-left: .5em;
+}
+
+.cat-links a, .comments-link a, .edit-link a {
+	padding: 0 .5em;
+	margin: 0 .5em 0 0;
+}

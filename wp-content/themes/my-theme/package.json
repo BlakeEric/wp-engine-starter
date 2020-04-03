@@ -1,0 +1,33 @@
+{
+    "name": "custom-wp-starter",
+    "version": "1.0.0",
+    "description": "A custom WordPress theme",
+    "main": "index.js",
+    "author": "",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "http://link-to-your-git-repo.com"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "browserslist": "^4.8.6",
+        "caniuse-lite": "^1.0.30001025",
+        "del": "3.0.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "6.0.0",
+        "gulp-concat": "2.6.1",
+        "gulp-cssnano": "2.1.3",
+        "gulp-flatmap": "1.0.2",
+        "gulp-header": "2.0.5",
+        "gulp-jshint": "2.1.0",
+        "gulp-optimize-js": "1.1.0",
+        "gulp-rename": "1.4.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-svgmin": "2.1.0",
+        "gulp-uglify": "3.0.1",
+        "jshint": "2.9.6",
+        "jshint-stylish": "2.2.1",
+        "lazypipe": "1.0.1"
+    }
+}
