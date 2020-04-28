@@ -1,6 +1,6 @@
 WP Engine WordPress starter
 ===
-__WordPress development is the worst.__ This is a starter repo meant to make WordPress development more DRY and to integrate projects more easily with WP Engine using modern dev practices.
+This is a starter repo meant to make WordPress development more DRY and to integrate projects more easily with WP Engine using modern dev practices.
 
 This repository contains:
 * Some boilerplate functionality in `wp-content/mu-plugins` for cleaning up the admin dashboard, initializing custom post types, etc.
